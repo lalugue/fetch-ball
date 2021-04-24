@@ -8,6 +8,8 @@ public class Ball : MonoBehaviour
     public float forceY = 50f;
     public float randomMin = 150f;
     public float randomMax = 500f;
+
+    bool canThrow = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +19,20 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space) && canThrow){
+            canThrow = false;
+            ThrowBall();
+        }
     }
 
+    // alternative way to start game: click ball
+    /*
     private void OnMouseOver() {        
         if(Input.GetMouseButtonDown(0)){ 
             ThrowBall();
         }
     }
+    */
 
     public void ThrowBall(){
         forceX = Random.Range(randomMin, randomMax);           
