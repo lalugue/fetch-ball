@@ -6,7 +6,7 @@ public class DogMovement : MonoBehaviour
 {
     public int velocity = 5;
     public float jumpForce = 20f;
-    bool canJump = true; //for single jumping
+    //bool canJump = true; //for single jumping
     int jumpCount = 0; //for double-jumping
     int jumpLimit = 2;
 
