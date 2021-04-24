@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    public float forceX = 50f;
+    public float forceY = 50f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,8 @@ public class Ball : MonoBehaviour
 
     private void OnMouseOver() {        
         if(Input.GetMouseButtonDown(0)){            
-            Destroy(this.gameObject);            
+            this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(forceX, forceY));
         }
     }
 }
