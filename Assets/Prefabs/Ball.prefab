@@ -101,7 +101,7 @@ MonoBehaviour:
   randomMin: 150
   randomMax: 500
   timeToThrow: 0.5
-  timer: {fileID: 5560333055680764805, guid: aec6fd138da6a144897928b6179dfe78, type: 3}
+  timer: {fileID: 0}
 --- !u!58 &2119004530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5675538571544542379}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7e03054c56a8dd549ada0c8e38cbe7c2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
