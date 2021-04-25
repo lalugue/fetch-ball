@@ -47,6 +47,10 @@ public class DogMovement : MonoBehaviour
         return hasBall;
     }
 
+    public void TakeBallFromDog(){
+        hasBall = false;
+    }
+
 
 
 }
