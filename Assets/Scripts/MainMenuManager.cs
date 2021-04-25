@@ -19,7 +19,7 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-    void LoadGame(){
+    public void LoadGame(){
         SceneManager.LoadScene("GameScene");
     }
 }
