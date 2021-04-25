@@ -8,6 +8,8 @@ public class Timer : MonoBehaviour
 
     public float time = 60f;
     public Text timeText;
+    public Text finalText;
+    public GameObject scorer;
     bool runningTime = true;
 
     // Start is called before the first frame update
@@ -26,16 +28,24 @@ public class Timer : MonoBehaviour
         timeText.text = stringTime;
 
         if(time <= 0f){
+            ShowFinalText();
             Time.timeScale = 0;
         }
 
     }
 
-    public void runTime(){
+    public void RunTime(){
         runningTime = true;
     }
 
-    public void stopTime(){
+    public void StopTime(){
         runningTime = false;
+    }
+
+    public void ShowFinalText(){
+        finalText.gameObject.SetActive(true);
+        int score = scorer.GetComponent<Scorer>().GetScore();
+        string scoreText = score.ToString();
+        finalText.text = "Good boy! You got " + scoreText + " balls!";
     }
 }
