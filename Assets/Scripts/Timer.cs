@@ -19,10 +19,16 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime; 
+        time -= Time.deltaTime;
+        time = time < 0f ? 0f : time; 
         int intTime = (int)time;
         string stringTime = intTime.ToString();              
         timeText.text = stringTime;
+
+        if(time <= 0f){
+            Time.timeScale = 0;
+        }
+
     }
 
     public void runTime(){
