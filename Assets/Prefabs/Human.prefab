@@ -93,7 +93,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -122,3 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dog: {fileID: 0}
+  scorer: {fileID: 0}
+  ball: {fileID: 5675538571544542379, guid: 91b3dab5977471d49beab240f1d6d5f1, type: 3}
+  ballPosition: {fileID: 0}
+  coin: {fileID: 8300000, guid: 37ef256b0835572438a09a36877f6345, type: 3}
+  audioManager: {fileID: 0}

@@ -10,9 +10,13 @@ public class Human : MonoBehaviour
     public Transform ballPosition;
 
 
+    public AudioClip coin;
+    AudioSource audioSource;
+    public GameObject audioManager;
+
     void Start()
     {
-        
+        audioSource = audioManager.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,6 +33,7 @@ public class Human : MonoBehaviour
                 scorer.GetComponent<Scorer>().AddScore();
                 dog.GetComponent<DogMovement>().TakeBallFromDog();
                 SpawnNewBall();
+                audioSource.PlayOneShot(coin, 0.7F);
 
             }
         }
