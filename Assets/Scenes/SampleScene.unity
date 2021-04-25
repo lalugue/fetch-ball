@@ -349,6 +349,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &630253357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5675538571544542377, guid: 91b3dab5977471d49beab240f1d6d5f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 693974785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &693974785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1213,6 +1219,17 @@ PrefabInstance:
       propertyPath: scorer
       value: 
       objectReference: {fileID: 70230293}
+    - target: {fileID: 1812338923019220284, guid: 795c47cd5330d1f47b268d5c6957bcd2,
+        type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 5675538571544542379, guid: 91b3dab5977471d49beab240f1d6d5f1,
+        type: 3}
+    - target: {fileID: 1812338923019220284, guid: 795c47cd5330d1f47b268d5c6957bcd2,
+        type: 3}
+      propertyPath: ballPosition
+      value: 
+      objectReference: {fileID: 630253357}
     - target: {fileID: 8490948422818661353, guid: 795c47cd5330d1f47b268d5c6957bcd2,
         type: 3}
       propertyPath: m_Name
