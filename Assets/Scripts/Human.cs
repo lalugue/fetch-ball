@@ -25,6 +25,7 @@ public class Human : MonoBehaviour
             {
                 Debug.Log("Good boy!");
                 scorer.GetComponent<Scorer>().AddScore();
+                dog.GetComponent<DogMovement>().TakeBallFromDog();
             }
         }
     }
