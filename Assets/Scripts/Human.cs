@@ -5,6 +5,7 @@ using UnityEngine;
 public class Human : MonoBehaviour
 {
     public GameObject dog;
+    public GameObject scorer;
 
 
     void Start()
@@ -23,6 +24,7 @@ public class Human : MonoBehaviour
             if(dog.GetComponent<DogMovement>().getHasBall())
             {
                 Debug.Log("Good boy!");
+                scorer.GetComponent<Scorer>().AddScore();
             }
         }
     }
