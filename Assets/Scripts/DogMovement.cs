@@ -37,7 +37,7 @@ public class DogMovement : MonoBehaviour
         jumpCount = 0;
         //canJump = true; //for single jumping
 
-        if(col.collider.gameObject.name == "Ball"){
+        if(col.collider.gameObject.tag == "Ball"){
             hasBall = true;
             GameObject.Destroy(col.collider.gameObject);
         }
