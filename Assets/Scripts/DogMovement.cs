@@ -11,10 +11,15 @@ public class DogMovement : MonoBehaviour
     int jumpLimit = 2;
 
     bool hasBall = false;
+
+    public AudioClip jump;
+    AudioSource audioSource;
+    public GameObject audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = audioManager.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -30,6 +35,7 @@ public class DogMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && (jumpCount < jumpLimit)){
             jumpCount++;
             this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            audioSource.PlayOneShot(jump, 0.7F);
         }
     }
 
