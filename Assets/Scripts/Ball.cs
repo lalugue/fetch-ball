@@ -46,4 +46,9 @@ public class Ball : MonoBehaviour
         this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(forceX, forceY));
     }
+
+    //called after instantiating ball (eg: from Human)
+    public void SetTimerManager(GameObject timeManager){
+        timer = timeManager;
+    }
 }
