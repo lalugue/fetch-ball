@@ -13,6 +13,7 @@ public class Human : MonoBehaviour
     public AudioClip coin;
     AudioSource audioSource;
     public GameObject audioManager;
+    public GameObject timer;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class Human : MonoBehaviour
             if(dog.GetComponent<DogMovement>().getHasBall())
             {
                 Debug.Log("Good boy!");
+                timer.GetComponent<Timer>().StopTime();
                 scorer.GetComponent<Scorer>().AddScore();
                 dog.GetComponent<DogMovement>().TakeBallFromDog();
                 SpawnNewBall();
