@@ -16,21 +16,28 @@ public class DogMovement : MonoBehaviour
     AudioSource audioSource;
     public GameObject audioManager;
 
+    SpriteRenderer spriteRenderer;
+    bool flipSprite = false;
+
     // Start is called before the first frame update
     void Start()
     {
         audioSource = audioManager.GetComponent<AudioSource>();
+        spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow)){
             Vector3 position = this.transform.position;            
-            this.transform.position += Vector3.left * velocity * Time.deltaTime;
+            this.transform.position += Vector3.left * velocity * Time.deltaTime; 
+            FlipSprite(true);
+                       
         }
         if (Input.GetKey(KeyCode.RightArrow)){
             Vector3 position = this.transform.position;            
             this.transform.position += Vector3.right * velocity * Time.deltaTime;
+            FlipSprite(false);
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) && (jumpCount < jumpLimit)){
             jumpCount++;
@@ -55,6 +62,13 @@ public class DogMovement : MonoBehaviour
 
     public void TakeBallFromDog(){
         hasBall = false;
+    }
+
+    void FlipSprite(bool flip){
+        if(flipSprite != flip){
+            spriteRenderer.flipX = flip;
+            flipSprite = flip;
+        }
     }
 
 
