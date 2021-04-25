@@ -21,15 +21,18 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime;
-        time = time < 0f ? 0f : time; 
-        int intTime = (int)time;
-        string stringTime = intTime.ToString();              
-        timeText.text = stringTime;
+        if(runningTime)
+            {
+            time -= Time.deltaTime;
+            time = time < 0f ? 0f : time; 
+            int intTime = (int)time;
+            string stringTime = intTime.ToString();              
+            timeText.text = stringTime;
 
-        if(time <= 0f){
-            ShowFinalText();
-            Time.timeScale = 0;
+            if(time <= 0f){
+                ShowFinalText();
+                Time.timeScale = 0;
+            }
         }
 
     }
