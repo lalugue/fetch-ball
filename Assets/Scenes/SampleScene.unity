@@ -1778,6 +1778,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 5
   timeText: {fileID: 1925460377}
+  finalText: {fileID: 1021946412}
+  scorer: {fileID: 70230293}
 --- !u!1 &2115523770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5877193757703100232, guid: dd66f619c58dcba48873708e50600e46,
