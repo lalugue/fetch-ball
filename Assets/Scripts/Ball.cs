@@ -10,18 +10,24 @@ public class Ball : MonoBehaviour
     public float randomMax = 500f;
 
     bool canThrow = true;
+    public float timeToThrow = 0.3f;
+    float startTime;
+
+    public GameObject timer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        startTime = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.UpArrow)) && canThrow){
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.UpArrow)) && canThrow && ((Time.time - startTime) >= timeToThrow)){
             canThrow = false;
             ThrowBall();
+            timer.GetComponent<Timer>().RunTime();
         }
     }
 
