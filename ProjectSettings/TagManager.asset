@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Dog
+    uniqueID: 3385483105
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
