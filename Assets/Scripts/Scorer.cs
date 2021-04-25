@@ -19,7 +19,7 @@ public class Scorer : MonoBehaviour
         
     }
 
-    void addScore(){
+    public void AddScore(){
         score++;
         scoreText.text = score.ToString();
 
