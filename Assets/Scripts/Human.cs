@@ -6,6 +6,8 @@ public class Human : MonoBehaviour
 {
     public GameObject dog;
     public GameObject scorer;
+    public GameObject ball;
+    public Transform ballPosition;
 
 
     void Start()
@@ -26,7 +28,13 @@ public class Human : MonoBehaviour
                 Debug.Log("Good boy!");
                 scorer.GetComponent<Scorer>().AddScore();
                 dog.GetComponent<DogMovement>().TakeBallFromDog();
+                SpawnNewBall();
+
             }
         }
+    }
+
+    void SpawnNewBall(){
+        Instantiate(ball, ballPosition.position, Quaternion.identity);
     }
 }
