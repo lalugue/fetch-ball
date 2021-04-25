@@ -42,6 +42,7 @@ public class Human : MonoBehaviour
     }
 
     void SpawnNewBall(){
-        Instantiate(ball, ballPosition.position, Quaternion.identity);
+        GameObject instantiatedBall = Instantiate(ball, ballPosition.position, Quaternion.identity);
+        instantiatedBall.GetComponent<Ball>().SetTimerManager(timer);
     }
 }
