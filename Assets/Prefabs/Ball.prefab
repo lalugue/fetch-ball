@@ -100,6 +100,8 @@ MonoBehaviour:
   forceY: 400
   randomMin: 150
   randomMax: 500
+  timeToThrow: 0.5
+  timer: {fileID: 5560333055680764805, guid: aec6fd138da6a144897928b6179dfe78, type: 3}
 --- !u!58 &2119004530
 CircleCollider2D:
   m_ObjectHideFlags: 0
