@@ -19,6 +19,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         startTime = Time.time;
+        this.gameObject.tag = "Respawn";
     }
 
     // Update is called once per frame
@@ -45,6 +46,7 @@ public class Ball : MonoBehaviour
         forceY = Random.Range(randomMin, randomMax);
         this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(forceX, forceY));
+        this.gameObject.tag = "Ball";
     }
 
     //called after instantiating ball (eg: from Human)
