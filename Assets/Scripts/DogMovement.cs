@@ -13,6 +13,7 @@ public class DogMovement : MonoBehaviour
     bool hasBall = false;
 
     public AudioClip jump;
+    public AudioClip pickup;
     AudioSource audioSource;
     public GameObject audioManager;
 
@@ -53,6 +54,7 @@ public class DogMovement : MonoBehaviour
         if(col.collider.gameObject.tag == "Ball"){
             hasBall = true;
             GameObject.Destroy(col.collider.gameObject);
+            audioSource.PlayOneShot(pickup, 0.7F);
         }
     }
 
