@@ -1676,21 +1676,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog
       objectReference: {fileID: 0}
-    - target: {fileID: 1730310099830618045, guid: 847ee04427565f64bb56fc3015cf3047,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1730310099830618045, guid: 847ee04427565f64bb56fc3015cf3047,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1730310099830618045, guid: 847ee04427565f64bb56fc3015cf3047,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2880086574180742971, guid: 847ee04427565f64bb56fc3015cf3047,
         type: 3}
       propertyPath: m_LocalPosition.x

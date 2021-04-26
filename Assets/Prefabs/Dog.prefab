@@ -146,4 +146,5 @@ MonoBehaviour:
   velocity: 5
   jumpForce: 10
   jump: {fileID: 8300000, guid: 4eb2f9c1f03424346b06f1353c262c1a, type: 3}
+  pickup: {fileID: 8300000, guid: be301616801102447ad144fea8cb2052, type: 3}
   audioManager: {fileID: 0}
