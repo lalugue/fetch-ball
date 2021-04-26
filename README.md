@@ -2,6 +2,10 @@
 
 Play fetch and become the goodest boy! Whether fetching on the park or underground, nothing will stop the goodest boy! 🐕
 
+A submission for [Ludum Dare 48](https://ldjam.com/events/ludum-dare/48/fetch-ball)
+
+### [Play Fetch Ball here!](https://koalatte.itch.io/fetch-ball)
+
 ## How to play
 
 Fetch as many balls as you can to your hooman before time runs out! 🐕😀
