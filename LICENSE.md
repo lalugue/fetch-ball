@@ -20,6 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+Code and assets created by lalugue (eg: not from the Kenney asset pack, etc.) are under the MIT license stated above
 
 License of .gitattributes (MIT):
 [source](https://github.com/UTS-AnimalLogicAcademy/git_unity/commit/6f2cfe22ccc07ef9e54f758e4c426b229d524d29#diff-c693279643b8cd5d248172d9c22cb7cf4ed163a3c98c8a3f69c2717edd3eacb7)
@@ -46,4 +47,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Premade sprite assets created by Kenney are under [public domain CC0 license](https://creativecommons.org/publicdomain/zero/1.0/)
+
